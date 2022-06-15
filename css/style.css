@@ -1,0 +1,151 @@
+:root{
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1)
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+    transition: width none;
+}
+
+/* body{
+    background: url(../images/bg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    height: 100vh;
+} */
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.header h1{
+    font-family: fantasy;
+}
+
+.header nav{
+    display: flex;
+    gap: 20px;
+}
+
+.contents{
+    text-align: center;
+}
+
+.contents img{
+    width: 20%;
+    margin-top: 100px;
+}
+
+.contents input{
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.contents .btn button{
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+footer{
+    text-align: center;
+    margin-top: 200px;
+    font-weight: 700;
+}
+
+.header nav a{
+    font-weight: 600;
+}
+
+.header nav .la-user{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:698px) {
+    .header{
+        display: none;
+    }
+
+    .contents input{
+        width: 100%;
+    }
+
+    .contents{
+        padding: 40px;
+    }
+
+    .contents img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:401px) {
+    .contents .btn button{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .contents input{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    footer{
+        margin-top: 500px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    footer{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:731px) {
+    footer{
+        margin-top: 200px;
+    }
+}
